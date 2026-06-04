@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاضرات في القيادة التربوية - جامعة أسيوط</title>
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #2980b9;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9f9;
+            --text-color: #2c3e50;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* غلاف الكتاب */
+        .cover-page {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .cover-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .cover-page h2 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        .meta-info {
+            margin-top: 30px;
+            font-size: 1.1rem;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 20px;
+        }
+
+        /* الجداول والتنسيقات العامة */
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-right: 5px solid var(--secondary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: right;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f4f4;
+        }
+
+        ul, ol {
+            padding-right: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* قسم الأسئلة والتطبيقات */
+        .quiz-section {
+            background-color: #ebf5fb;
+            border-right: 5px solid var(--accent-color);
+        }
+
+        .quiz-title {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .question-box {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #d4e6f1;
+        }
+
+        .question-text {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .options-list {
+            list-style-type: none;
+            padding-right: 10px;
+        }
+
+        .options-list li {
+            background: #fdfefe;
+            padding: 8px 12px;
+            border: 1px solid #e5e8e8;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .options-list li:hover {
+            background-color: #e8f4f8;
+            border-color: var(--secondary-color);
+        }
+        
+        .true-false-options span {
+            display: inline-block;
+            margin-left: 20px;
+            background: #f4f6f7;
+            padding: 5px 15px;
+            border-radius: 4px;
+            border: 1px solid #d5dbdb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- غلاف الكتاب الجامعي -->
+    <div class="cover-page">
+        <h1>جامعة أسيوط - كلية التربية</h1>
+        <p>قسم التربية المقارنة والإدارة التعليمية</p>
+        <h2>محاضرات في: القيادة التربوية</h2>
+        <p>لطلاب المستوى الأول (جميع الشعب العامة والتعليم الأساسي)</p>
+        <div class="meta-info">
+            <p>كود المقرر: COM127</p>
+            <p>الفصل الدراسي الثاني - للعام الجامعي 2025 / 2026 م</p>
+        </div>
+    </div>
+
+    <!-- رؤية ورسالة الكلية -->
+    <div class="card">
+        <h3>رؤية ورسالة كلية التربية بأسيوط</h3>
+        <p><strong>الرؤية (Vision):</strong> تسعى كلية التربية إلى اتخاذ موقع القيادة في ترقية المعرفة التربوية وتطبيقاتها لخدمة المجتمع ونظم التعليم ومن ثَمَّ فإنها تعمل على تطوير التعليم على كافة مستوياته بما يحقق تنمية بشرية مجتمعية شاملة ومستدامة للمجتمع المصري وتجعله في تواصل مع العالم العربي والأجنبي.</p>
+        <p><strong>الرسالة (Mission):</strong> تيسير عملية التطوير المستمر للتعليم على كافة مستوياته وكذلك التميز في مجالات إعداد المعلم والبحث العلمي وخدمة المجتمع وتطوير البرامج والسياسات التعليمية وذلك من خلال الشراكة الفعالة والتعاون مع وزارة التربية والتعليم والإدارات التعليمية والمدارس التابعة لها وكليات الجامعة الأخرى.</p>
+    </div>
+
+    <!-- الفصل الأول -->
+    <div class="card">
+        <h3>الفصل الأول: القيادة التربوية</h3>
+        <p>القيادة بشكل عام هي العنصر الإنساني الذي يربط أفراد الجماعة بعضهم مع بعض ويحفزهم على تحقيق الأهداف المرجوة. وتتكون القيادة من أربعة عناصر أساسية:</p>
+        <ul>
+            <li><strong>القائد:</strong> فرد متميز يمتلك القدرة على التأثير والحصول على الولاء الطوعي للجماعة.</li>
+            <li><strong>التابعون (الجماعة):</strong> مجموعة أفراد يشتركون في الرغبة لتحقيق هدف ما ويدينون للقائد بالولاء.</li>
+            <li><strong>الهدف المشترك:</strong> الغاية العليا التي تسعى الجماعة بأكملها للوصول إليها.</li>
+            <li><strong>الموقف (Situation):</strong> بيئة الموقف التي تمارس فيها القيادة وتحدث فيها عملية التأثير.</li>
+        </ul>
+
+        <h4>موازنة بين القيادة والإدارة (Day & Sammons):</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>وجه المقارنة</th>
+                    <th>القيادة</th>
+                    <th>الإدارة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>الهدف</strong></td>
+                    <td colspan="2">يتفقان في الغايات والأهداف العامة (تحقيق أهداف التربية والتعليم)</td>
+                </tr>
+                <tr>
+                    <td><strong>التركيز</strong></td>
+                    <td>الرؤية (Vision)</td>
+                    <td>التنفيذ</td>
+                </tr>
+                <tr>
+                    <td><strong>العمليات الإدارية</strong></td>
+                    <td>التخطيط الاستراتيجي</td>
+                    <td>العمليات الإدارية الروتينية</td>
+                </tr>
+                <tr>
+                    <td><strong>التأثير</strong></td>
+                    <td>التحويل والتغيير والتطوير</td>
+                    <td>الإجراءات الروتينية</td>
+                </tr>
+                <tr>
+                    <td><strong>الكفاءة والفعالية</strong></td>
+                    <td>الغايات (الفعالية)</td>
+                    <td>الوسائل (الكفاءة)</td>
+                </tr>
+                <tr>
+                    <td><strong>الأداء</strong></td>
+                    <td>فعل الأشياء الصحيحة</td>
+                    <td>فعل الأشياء بالطريقة الصحيحة</td>
+                </tr>
+                <tr>
+                    <td><strong>العلاقات الإنسانية</strong></td>
+                    <td>التركيز على الأفراد</td>
+                    <td>التركيز على الأنظمة</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- الفصل الثاني -->
+    <div class="card">
+        <h3>الفصل الثاني: القيادة المدرسية والمناخ المدرسي</h3>
+        <p><strong>القيادة المدرسية (School Leadership):</strong> منظومة فرعية من القيادة التربوية على المستوى الإجرائي (المدرسة)، تهتم بتأهيل مدير المدرسة للارتقاء بمدرسته والتأثير الفعال في سلوك أعضاء المجتمع المدرسي.</p>
+        
+        <h4>مستويات القيادة التربوية الخمسة:</h4>
+        <ol>
+            <li>القيادة العامة</li>
+            <li>القيادة التربوية</li>
+            <li>القيادة التعليمية</li>
+            <li>القيادة المدرسية</li>
+            <li>القيادة الصفية</li>
+        </ol>
+
+        <h4>أنواع المناخ المدرسي:</h4>
+        <ul>
+            <li><strong>المناخ المفتوح (The Open Climate):</strong> يتصف بحرية الأفراد، وسلوكهم الحقيقي، وارتفاع الترابط والعلاقات الطيبة بين المعلمين والمشرفين، وسيادة النمط الديمقراطي.</li>
+            <li><strong>المناخ المغلق (The Closed Climate):</strong> يتسم بقلة الترابط، وضعف المسؤولية، وكثرة المشاحنات والروتين والأعباء غير الضرورية، وسيطرة النمط الأوتوقراطي.</li>
+        </ul>
+    </div>
+
+    <!-- قسم الأسئلة والتطبيقات الشاملة -->
+    <div class="card quiz-section">
+        <p class="quiz-title">بنك الأسئلة والتطبيقات المقررة (امتحان تجريبي شامل)</p>
+        <p>مجموعة من الأسئلة الموضوعية والمقالية المصممة وفقاً للمادة العلمية الواردة بالكتاب:</p>
+
+        <!-- القسم الأول: الاختيار من متعدد -->
+        <h4>أولاً: أسئلة الاختيار من متعدد (MCQ)</h4>
+        
+        <div class="question-box">
+            <p class="question-text">1. أي مما يلي يمثل محور وعنصر الارتكاز الأساسي في عملية القيادة؟</p>
+            <ul class="options-list">
+                <li>أ) السلطة الرسمية</li>
+                <li>ب) التأثير (Influence)</li>
+                <li>ج) الإذعان القسري</li>
+                <li>د) الإجراءات الروتينية</li>
+            </ul>
+        </div>
+
+        <div class="question-box">
+            <p class="question-text">2. وفقاً لدراسة جامعة "أيوا" (Iowa)، النمط القيادي الذي يركز على العمل فقط ويصنع القرارات بمفرده هو:</p>
+            <ul class="options-list">
+                <li>أ) النمط الديمقراطي</li>
+                <li>ب) النمط الفوضوي (الترسلي)</li>
+                <li>ج) النمط الأوتوقراطي (التسلطي)</li>
+                <li>د) النمط التحويلي</li>
+            </ul>
+        </div>
+
+        <div class="question-box">
+            <p class="question-text">3. "فعل الأشياء الصحيحة" يعبر عن التركيز الأساسي لـ ______ بينما "فعل الأشياء بالطريقة الصحيحة" يعبر عن ______:</p>
+            <ul class="options-list">
+                <li>أ) الإدارة / القيادة</li>
+                <li>ب) القيادة / الإدارة</li>
+                <li>ج) التابعين / المناخ المغلق</li>
+                <li>د) التنظيم التكنولوجي / التنظيم الاجتماعي</li>
+            </ul>
+        </div>
+
+        <div class="question-box">
+            <p class="question-text">4. شبّه العالم (هالبين Halpin) المناخ التنظيمي للمنظمة بـ:</p>
+            <ul class="options-list">
+                <li>أ) القائد المهني</li>
+                <li>ب) الهيكل الهرمي</li>
+                <li>ج) الشخصية بالنسبة للفرد</li>
+                <li>د) اللوائح والقوانين الرسمية</li>
+            </ul>
+        </div>
+
+        <!-- القسم الثاني: صواب أم خطأ -->
+        <h4>ثانياً: أسئلة الصواب والخطأ (T or F)</h4>
+
+        <div class="question-box">
+            <p class="question-text">1. كل قائد بالضرورة إداري، ولكن ليس كل إداري بالضرورة قائداً.</p>
+            <div class="true-false-options">
+                <span>( ) صواب</span>
+                <span>( ) خطأ</span>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <p class="question-text">2. يضيف العالم (السعود) الموقف كعنصر رابع لعناصر القيادة، وهو بيئة الموقف التي تحدث فيه عملية التأثير.</p>
+            <div class="true-false-options">
+                <span>( ) صواب</span>
+                <span>( ) خطأ</span>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <p class="question-text">3. المهارات الفنية تحتل مكان الصدارة في المستويات الإدارية العليا، بينما تقل الحاجة إليها في المستويات الدنيا الإجرائية.</p>
+            <div class="true-false-options">
+                <span>( ) صواب</span>
+                <span>( ) خطأ</span>
+            </div>
+        </div>
+
+        <div class="question-box">
+            <p class="question-text">4. القيادة التحويلية تعمل أساساً من أجل المحافظة على الاستقرار، بينما تعمل الإدارة لخدمة التغيير.</p>
+            <div class="true-false-options">
+                <span>( ) صواب</span>
+                <span>( ) خطأ</span>
+            </div>
+        </div>
+
+        <!-- القسم الثالث: أسئلة مقالية -->
+        <h4>ثالثاً: الأسئلة المقالية التطبيقية</h4>
+        <div class="question-box">
+            <p class="question-text">س1: ما الفرق بين "القوة"، "السلطة"، و"التأثير" كمصادر لقوة القيادة التربوية؟</p>
+            <p style="color: #7f8c8d; font-size: 0.95rem;">إرشاد للإجابة: القوة تعني الإذعان القسري؛ السلطة هي القوة الشرعية القانونية بقرار أو تعليمات؛ التأثير هو محور القيادة ويقصد به تغيير سلوك ومشاعر الآخرين طواعية.</p>
+        </div>
+        
+        <div class="question-box">
+            <p class="question-text">س2: اذكر معايير تعامل القيادة المدرسية الفاعلة مع الطلبة من "ذوي الاحتياجات الخاصة" (المتفوقين وذوي صعوبات التعلم)؟</p>
+            <p style="color: #7f8c8d; font-size: 0.95rem;">إرشاد للإجابة: تشمل الإيمان بالفروق الفردية، توفير برامج تدريب المعلمين على الاكتشاف والتصنيف، تطبيق المقاييس المقننة، توفير قاعدة بيانات خاصة، وتهيئة بيئة تربوية مدمجة مع الطلبة العاديين.</p>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <div style="text-align: center; margin-top: 50px; color: #7f8c8d; font-size: 0.9rem; border-top: 1px solid #d5dbdb; padding-top: 20px;">
+        <p>مع تمنياتنا بالتوفيق والنجاح | قسم التربية المقارنة والإدارة التعليمية - جامعة أسيوط</p>
+    </div>
+
+</div>
+
+</body>
+</html>
